@@ -102,8 +102,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ---- Nested sub-navigation ---- */
+/* Hidden by default; shown only when the parent link is active.
+   The nested <ul> is a sibling of the parent <a>, so the adjacent
+   sibling combinator reveals it when the parent carries .active. */
 .nav ul ul {
+  display: none;
   background: #7a7a7a;
+}
+.nav a.active + ul {
+  display: flex;
+  flex-direction: column;
 }
 .nav ul ul a {
   padding-left: 2rem;
