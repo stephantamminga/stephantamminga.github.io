@@ -32,11 +32,6 @@ title: Fotoclub Beeldspraak
   <div class="photo-caption">The art of broken glass &copy; Margreet Nagelsmit</div>
 </div>
 
-<h3>Thema's &amp; projecten</h3>
-<p>&ndash; Thema: Roze &copy; Leon Engels</p>
-<p>&ndash; &copy; Rients Hofstra</p>
-<p>Bekijk de werkgroepen en thema-projecten voor het huidige seizoen via het menu links.</p>
-
 <h3>Agenda &amp; kalender</h3>
 <p>Alle bijeenkomsten en activiteiten staan in de agenda 2025/26 en 2026/27. Zie &ldquo;Activiteitenkalender&rdquo; voor een ICS-download om in je eigen agenda te integreren.</p>
 
