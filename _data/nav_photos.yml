@@ -3,13 +3,17 @@
 # Images must be placed in: assets/images/content/navigation/
 
 photos:
-  - filename: "photo1.jpg"
-    title: "Winter Exhibition"
-    credit: "Jan de Fotograaf"
+  - filename: "RochersAdema-ThemaRoze.png"
+    title: "Thema: Roze"
+    credit: "Rochers Adema"
   
-  - filename: "photo2.jpg"
-    title: "Spring Colors"
-    credit: "Piet Lens"
+  - filename: "LeonEngels.jpg"
+    title: ""
+    credit: "Leon Engels"
+  
+  - filename: "RientsHofstra.png"
+    title: ""
+    credit: "Rients Hofstra"
   
   # Add more as needed (1-3 recommended)
   # - filename: "photo3.jpg"
