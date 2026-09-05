@@ -16,7 +16,13 @@
     <li><a href="{{ '/pages/agenda-2025-26' | relative_url }}" class="{%- if page.url contains 'agenda-2025-26' %}active{%- endif %}">Agenda 2025/26</a></li>
     <li><a href="{{ '/pages/agenda-2026-27' | relative_url }}" class="{%- if page.url contains 'agenda-2026-27' %}active{%- endif %}">Agenda 2026/27</a></li>
     <li><a href="{{ '/pages/activiteitenkalender' | relative_url }}" class="{%- if page.url contains 'activiteitenkalender' %}active{%- endif %}">Activiteitenkalender</a></li>
-    <li><a href="{{ '/pages/fotobespreking-werkwijze' | relative_url }}" class="{%- if page.url contains 'fotobespreking-werkwijze' %}active{%- endif %}">Fotobespreking werkwijze</a></li>
+    <li>
+      <a href="{{ '/pages/fotobespreking-werkwijze' | relative_url }}" class="{%- if page.url contains 'fotobespreking-werkwijze' %}active{%- endif %}">Fotobespreking werkwijze</a>
+      <ul>
+        <li><a href="{{ '/pages/fotobespreking-werkwijze/fotobespreking-hulp' | relative_url }}" class="{%- if page.url contains 'fotobespreking-hulp' %}active{%- endif %}">Fotobespreking hulp</a></li>
+        <li><a href="{{ '/pages/fotobespreking-werkwijze/genres-bij-beeldspraak' | relative_url }}" class="{%- if page.url contains 'genres-bij-beeldspraak' %}active{%- endif %}">Genres bij Beeldspraak</a></li>
+      </ul>
+    </li>
     <li><a href="{{ '/pages/fotos-actueel' | relative_url }}" class="{%- if page.url contains 'fotos-actueel' %}active{%- endif %}">Foto's actueel</a></li>
     <li><a href="{{ '/pages/fotos-archief' | relative_url }}" class="{%- if page.url contains 'fotos-archief' %}active{%- endif %}">Foto's archief</a></li>
     <li><a href="{{ '/pages/foto-van-de-maand' | relative_url }}" class="{%- if page.url contains 'foto-van-de-maand' %}active{%- endif %}">Foto van de maand</a></li>
