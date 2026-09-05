@@ -11,12 +11,12 @@ title: Fotoclub Beeldspraak
 
 <h3>Laatste nieuws</h3>
 <div class="news-list">
-  <p class="news-highlight">8 september starten we weer &ndash; ALV &ndash; Foto van seizoen 2025/2026 &ndash; Foto van de maand mei.</p>
-  <p>Check ook het archief voor eerdere foto's van de maand &ndash; &copy; Andr&eacute; Krale.</p>
-  <p>Thema Photorun 2026 &ndash; &ldquo;It's so good&rdquo;. Op 12 mei bespreken we de resultaten van de Photorun 2026.</p>
-  <p>De data voor het komende seizoen 2026&ndash;2027 staan vast.</p>
-  <p>Download hier de calendar file voor in je Google/Outlook/Thunderbird etc. agenda, dan mis je nooit een bijeenkomst.</p>
-  <p>14 april bespreken we vrij werk zonder thema.</p>
+  - 8 september starten we weer &ndash; ALV &ndash; Foto van seizoen 2025/2026 &ndash; Foto van de maand mei.
+  - Foto van de maand Mei &ndash;Check ook het archief voor eerdere foto's van de maand &ndash; &copy; Andr&eacute; Krale.
+  - Thema Photorun 2026 &ndash; &ldquo;It's so good&rdquo;. Op 12 mei bespreken we de resultaten van de Photorun 2026.
+  - De data voor het komende seizoen 2026&ndash;2027 staan vast.
+  - Download hier de calendar file voor in je Google/Outlook/Thunderbird etc. agenda, dan mis je nooit een bijeenkomst.
+  - 14 april bespreken we vrij werk zonder thema.
 </div>
 
 <h3>Wedstrijden &amp; resultaten</h3>

@@ -72,8 +72,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ---- Vertical navigation ---- */
 .nav {
-  position: sticky;
-  top: 1rem;
   background: var(--nav-bg);
   color: var(--nav-fg);
   border-radius: 4px;
