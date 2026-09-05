@@ -1,0 +1,24 @@
+<!-- Vertical navigation -->
+<button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav">
+  <span class="hamburger"><span></span><span></span><span></span></span>
+  Menu
+</button>
+<nav class="nav" id="nav" aria-label="Hoofdnavigatie">
+  <ul>
+    <li><a href="{{ '/' | relative_url }}" class="{%- if page.url == '/' %}active{%- endif %}">Homepage</a></li>
+    <li><a href="{{ '/pages/clubnieuws' | relative_url }}" class="{%- if page.url contains 'clubnieuws' %}active{%- endif %}">Clubnieuws</a></li>
+    <li><a href="{{ '/pages/werkgroepen' | relative_url }}" class="{%- if page.url contains 'werkgroepen' %}active{%- endif %}">Werkgroepen</a></li>
+    <li><a href="{{ '/pages/agenda-2025-26' | relative_url }}" class="{%- if page.url contains 'agenda-2025-26' %}active{%- endif %}">Agenda 2025/26</a></li>
+    <li><a href="{{ '/pages/agenda-2026-27' | relative_url }}" class="{%- if page.url contains 'agenda-2026-27' %}active{%- endif %}">Agenda 2026/27</a></li>
+    <li><a href="{{ '/pages/activiteitenkalender' | relative_url }}" class="{%- if page.url contains 'activiteitenkalender' %}active{%- endif %}">Activiteitenkalender</a></li>
+    <li><a href="{{ '/pages/fotobespreking-werkwijze' | relative_url }}" class="{%- if page.url contains 'fotobespreking-werkwijze' %}active{%- endif %}">Fotobespreking werkwijze</a></li>
+    <li><a href="{{ '/pages/fotos-actueel' | relative_url }}" class="{%- if page.url contains 'fotos-actueel' %}active{%- endif %}">Foto's actueel</a></li>
+    <li><a href="{{ '/pages/fotos-archief' | relative_url }}" class="{%- if page.url contains 'fotos-archief' %}active{%- endif %}">Foto's archief</a></li>
+    <li><a href="{{ '/pages/foto-van-de-maand' | relative_url }}" class="{%- if page.url contains 'foto-van-de-maand' %}active{%- endif %}">Foto van de maand</a></li>
+    <li><a href="{{ '/pages/fotos-van-leden' | relative_url }}" class="{%- if page.url contains 'fotos-van-leden' %}active{%- endif %}">Foto's van leden</a></li>
+    <li><a href="{{ '/pages/links' | relative_url }}" class="{%- if page.url contains 'links' %}active{%- endif %}">Links</a></li>
+    <li><a href="{{ '/pages/over-beeldspraak' | relative_url }}" class="{%- if page.url contains 'over-beeldspraak' %}active{%- endif %}">Over Beeldspraak</a></li>
+    <li><a href="{{ '/pages/contact' | relative_url }}" class="{%- if page.url contains 'contact' %}active{%- endif %}">Contact</a></li>
+  </ul>
+</nav>
+<div class="nav-overlay" id="navOverlay"></div>

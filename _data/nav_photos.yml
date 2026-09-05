@@ -1,0 +1,17 @@
+# Navigation section highlighted photos
+# Add/remove photos here - the site will automatically update
+# Images must be placed in: assets/images/content/navigation/
+
+photos:
+  - filename: "photo1.jpg"
+    title: "Winter Exhibition"
+    credit: "Jan de Fotograaf"
+  
+  - filename: "photo2.jpg"
+    title: "Spring Colors"
+    credit: "Piet Lens"
+  
+  # Add more as needed (1-3 recommended)
+  # - filename: "photo3.jpg"
+  #   title: "Summer Light"
+  #   credit: "Annie Camera"

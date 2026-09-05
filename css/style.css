@@ -1,0 +1,324 @@
+/* Fotoclub Beeldspraak - site styles */
+
+:root {
+  --bg: #f5f5f5;
+  --fg: #222;
+  --panel: #fff;
+  --accent: #b22222;
+  --link: #0055aa;
+  --nav-bg: #8a8a8a;
+  --nav-fg: #eee;
+  --nav-active: #b22222;
+  --border: #ddd;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #b22222;
+}
+
+/* ---- Permanent banner ---- */
+/* The image is in flow (width:100%, height:auto) so the banner's
+   height scales to the image's aspect ratio and the full image is
+   always shown. Width is constrained to match the layout (nav +
+   content) area and centered, with the same horizontal padding as
+   .layout so the image edges line up with the columns below. */
+.banner {
+  flex: 0 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.banner img.banner-bg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ---- Two-column layout ---- */
+.layout {
+  flex: 1 1 auto;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2rem;
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+.layout-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ---- Vertical navigation ---- */
+.nav {
+  position: sticky;
+  top: 1rem;
+  background: var(--nav-bg);
+  color: var(--nav-fg);
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+  padding: 0.5rem 0;
+}
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.nav a {
+  display: block;
+  color: var(--nav-fg);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border-left: 3px solid transparent;
+  transition: background 0.15s, border-color 0.15s;
+}
+.nav a:hover { background: #333; }
+.nav a.active {
+  background: #2c2c2c;
+  border-left-color: var(--nav-active);
+  font-weight: 600;
+}
+
+/* ---- Navigation photos ---- */
+.nav-photos {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+.nav-photo {
+  flex: 1 1 calc(33.33% - 0.67rem);
+  min-width: 200px;
+}
+.nav-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+}
+.photo-credit {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
+/* ---- Content area ---- */
+.content {
+  background: var(--panel);
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  min-height: 60vh;
+}
+.content h2 {
+  margin-top: 0;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.4rem;
+}
+.content h3 {
+  margin-top: 1.2rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.3rem;
+}
+.content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.content a { color: var(--link); }
+
+.content .photo-highlight { text-align: center; margin: 1rem 0; }
+.content .photo-caption { font-size: 0.85rem; color: #555; }
+.content .news-highlight { font-weight: 600; }
+
+/* loading / error states */
+.content .state-loading,
+.content .state-error {
+  color: #777;
+  font-style: italic;
+  padding: 2rem 0;
+}
+.content .state-error { color: var(--accent); }
+
+/* ---- Nav toggle button (mobile only; hidden on desktop) ---- */
+.nav-toggle {
+  display: none;
+  width: 100%;
+  background: var(--nav-bg);
+  color: var(--nav-fg);
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+.nav-toggle .hamburger {
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  position: relative;
+}
+.nav-toggle .hamburger span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--nav-fg);
+  border-radius: 2px;
+  transition: transform 0.2s, opacity 0.2s, top 0.2s;
+}
+.nav-toggle .hamburger span:nth-child(1) { top: 0.25em; }
+.nav-toggle .hamburger span:nth-child(2) { top: 0.55em; }
+.nav-toggle .hamburger span:nth-child(3) { top: 0.85em; }
+.nav-toggle[aria-expanded="true"] .hamburger span:nth-child(1) {
+  top: 0.55em; transform: rotate(45deg);
+}
+.nav-toggle[aria-expanded="true"] .hamburger span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] .hamburger span:nth-child(3) {
+  top: 0.55em; transform: rotate(-45deg);
+}
+
+/* Overlay backdrop shown behind the open mobile nav */
+.nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 40;
+}
+
+/* ---- Footer ---- */
+footer {
+  flex: 0 0 auto;
+  background: #111;
+  color: #ccc;
+  font-size: 0.85rem;
+  padding: 1rem;
+}
+footer .footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
+}
+footer a { color: var(--link); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+/* ============================================================= */
+/* Responsive                                                    */
+/* Tablet: 801-1024px — narrower nav column                      */
+/* Mobile: <=800px — hamburger toggle, collapsible off-canvas nav */
+/* ============================================================= */
+
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  /* Banner: match the layout's tighter mobile padding */
+  .banner { padding: 0 0.75rem; }
+
+  /* Layout: single column, tighter padding */
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0.75rem 0.75rem 1.5rem;
+  }
+
+  /* Show the hamburger toggle */
+  .nav-toggle { display: block; }
+
+  /* Nav: off-canvas, hidden until toggled */
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 260px;
+    max-width: 80vw;
+    border-radius: 0;
+    z-index: 50;
+    padding: 0;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    overflow-y: auto;
+    /* leave room below the hamburger which sits above it in DOM */
+    margin-top: 0;
+  }
+  .nav.open { transform: translateX(0); }
+
+  .nav ul { padding-top: 0.5rem; padding-bottom: 1rem; }
+
+  /* Touch-friendly targets */
+  .nav a {
+    padding: 0.85rem 1.25rem;
+    font-size: 1rem;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    border-left: 3px solid transparent;
+    border-bottom: none;
+  }
+  .nav a.active {
+    border-left-color: var(--nav-active);
+    border-bottom: none;
+  }
+
+  /* Show overlay when nav is open */
+  .nav.open + .nav-overlay,
+  .nav-overlay.visible { display: block; }
+
+  /* Content: full width, comfortable padding */
+  .content {
+    padding: 1.1rem;
+    min-height: 50vh;
+  }
+  .content h2 { font-size: 1.3rem; }
+  .content h3 { font-size: 1.05rem; }
+
+  /* Footer stacks */
+  footer .footer-inner { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
+}
+
+/* Extra-small phones: even tighter */
+@media (max-width: 380px) {
+  .content { padding: 0.85rem; }
+  .content h2 { font-size: 1.15rem; }
+}

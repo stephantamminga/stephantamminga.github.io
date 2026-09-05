@@ -1,0 +1,13 @@
+{%- assign photos = site.data.nav_photos.photos -%}
+{%- if photos and photos.size > 0 -%}
+<div class="nav-photos">
+  {%- for photo in photos -%}
+  <div class="nav-photo">
+    <img src="{{ '/assets/images/content/navigation/' | append: photo.filename | relative_url }}" alt="{{ photo.title | default: 'Highlighted photo' }}">
+    {%- if photo.credit -%}
+    <div class="photo-credit">(c) {{ photo.credit }}</div>
+    {%- endif -%}
+  </div>
+  {%- endfor -%}
+</div>
+{%- endif -%}

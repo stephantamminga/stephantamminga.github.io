@@ -1,0 +1,46 @@
+# Fotoclub Beeldspraak - Jekyll Configuration
+# GitHub Pages compatible
+
+# Site settings
+title: Fotoclub Beeldspraak
+email: 
+description: >-
+  Fotoclub Beeldspraak heeft prima amateurfotografen in haar gelederen.
+baseurl: ""
+url: "https://beeldspraak.github.io"
+
+# Build settings
+markdown: kramdown
+theme: null
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - .sass-cache/
+  - .jekyll-cache/
+  - .git/
+  - .gitignore
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: "pages"
+    values:
+      layout: "page"
+
+# Plugins (GitHub Pages supports these by default)
+plugins:
+  - jekyll-feed
