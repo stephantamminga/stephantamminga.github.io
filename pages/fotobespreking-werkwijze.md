@@ -3,8 +3,6 @@ layout: page
 title: Fotobespreking werkwijze
 ---
 
-# Fotobespreking werkwijze
-
 ## Foto's inleveren
 
 - Iedere foto *digitaal* aanleveren aan de webmaster en wel vóór de via e-mail bekend gemaakte inleverdatum. De foto's hoeven dus niet digitaal aangeleverd te worden aan de besprekers
