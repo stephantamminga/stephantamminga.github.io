@@ -101,6 +101,22 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+/* ---- Nested sub-navigation ---- */
+.nav ul ul {
+  background: #7a7a7a;
+}
+.nav ul ul a {
+  padding-left: 2rem;
+  font-size: 0.9rem;
+  border-left: none;
+}
+.nav ul ul a:hover { background: #2c2c2c; }
+.nav ul ul a.active {
+  background: #2c2c2c;
+  border-left: none;
+  font-weight: 600;
+}
+
 /* ---- Navigation photos ---- */
 .nav-photos {
   display: flex;

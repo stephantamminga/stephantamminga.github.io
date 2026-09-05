@@ -7,7 +7,12 @@
   <ul>
     <li><a href="{{ '/' | relative_url }}" class="{%- if page.url == '/' %}active{%- endif %}">Homepage</a></li>
     <li><a href="{{ '/pages/clubnieuws' | relative_url }}" class="{%- if page.url contains 'clubnieuws' %}active{%- endif %}">Clubnieuws</a></li>
-    <li><a href="{{ '/pages/werkgroepen' | relative_url }}" class="{%- if page.url contains 'werkgroepen' %}active{%- endif %}">Werkgroepen</a></li>
+    <li>
+      <a href="{{ '/pages/werkgroepen' | relative_url }}" class="{%- if page.url contains 'werkgroepen' %}active{%- endif %}">Werkgroepen</a>
+      <ul>
+        <li><a href="{{ '/pages/werkgroepen-techniek' | relative_url }}" class="{%- if page.url contains 'werkgroepen-techniek' %}active{%- endif %}">Techniek</a></li>
+      </ul>
+    </li>
     <li><a href="{{ '/pages/agenda-2025-26' | relative_url }}" class="{%- if page.url contains 'agenda-2025-26' %}active{%- endif %}">Agenda 2025/26</a></li>
     <li><a href="{{ '/pages/agenda-2026-27' | relative_url }}" class="{%- if page.url contains 'agenda-2026-27' %}active{%- endif %}">Agenda 2026/27</a></li>
     <li><a href="{{ '/pages/activiteitenkalender' | relative_url }}" class="{%- if page.url contains 'activiteitenkalender' %}active{%- endif %}">Activiteitenkalender</a></li>
