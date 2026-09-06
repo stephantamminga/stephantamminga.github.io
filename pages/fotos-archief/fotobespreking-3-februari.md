@@ -6,22 +6,22 @@ parent: Foto's archief
 
 # Fotobespreking 3 februari : Intentional Camera Movement (ICM) in de bebouwde omgeving
 
-![](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/ic8c14b8eaddcecae/version/1775561593/image.jpg)
+![](/assets/images/content/fotobespreking-3-februari/01.jpg)
 
-![in Vogelvlucht](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i1bb7bb8018377bac/version/1775561594/image.jpg)
+![in Vogelvlucht](/assets/images/content/fotobespreking-3-februari/02.jpg)
 
-![met papa in de grote stad](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/ia5888af731d76fdc/version/1775561594/image.jpg)
+![met papa in de grote stad](/assets/images/content/fotobespreking-3-februari/03.jpg)
 
-![](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i9aac321981cbc280/version/1775561594/image.jpg)
+![](/assets/images/content/fotobespreking-3-februari/04.jpg)
 
-![](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i17b6a37d0f4056d6/version/1775561594/image.jpg)
+![](/assets/images/content/fotobespreking-3-februari/05.jpg)
 
-![](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/ib69faf2acdfb4942/version/1775561595/image.jpg)
+![](/assets/images/content/fotobespreking-3-februari/06.jpg)
 
-![](https://image.jimcdn.com/app/cms/image/transf/none/path/s996a626ed2704e34/image/ic040e21d6b80fda8/version/1775561595/image.jpg)
+![](/assets/images/content/fotobespreking-3-februari/07.jpg)
 
-![](https://image.jimcdn.com/app/cms/image/transf/none/path/s996a626ed2704e34/image/i193f234ad7eee735/version/1775561595/image.jpg)
+![](/assets/images/content/fotobespreking-3-februari/08.jpg)
 
-![](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/ied8c223207fa545a/version/1775561595/image.jpg)
+![](/assets/images/content/fotobespreking-3-februari/09.jpg)
 
-![](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i8fc652a81b6fb5a9/version/1775561595/image.jpg)
+![](/assets/images/content/fotobespreking-3-februari/10.jpg)

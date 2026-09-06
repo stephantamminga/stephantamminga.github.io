@@ -6,7 +6,7 @@ parent: Foto's van leden
 
 # Ieder lid heeft recht op een eigen pagina op de website
 
-Webmaster van dienst: Ron Meiburg / ron-meiburg@home.nl
+Webmaster van dienst: Ron Meiburg / website@fotoclubbeeldspraak.nl
 
 Ieder lid heeft de beschikking over een eigen pagina op onze website.
 

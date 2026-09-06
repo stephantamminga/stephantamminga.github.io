@@ -10,36 +10,36 @@ Hieronder de definitieve inzending voor de Bondfotowedstrijd 2026.
 
 ## Gerrit
 
-![Gerrit](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i18100d73d87f18ec/version/1771874584/image.jpg)
+![Gerrit](/assets/images/content/bondsfotowedstrijd-2026/01.jpg)
 
-![Gerrit](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/ie30258b966b2e48b/version/1771874584/image.jpg)
+![Gerrit](/assets/images/content/bondsfotowedstrijd-2026/02.jpg)
 
 ## Stephan
 
-![Stephan](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i8644839ac688ca1e/version/1771874591/image.jpg)
+![Stephan](/assets/images/content/bondsfotowedstrijd-2026/03.jpg)
 
-![Stephan](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i118e3a2aecd32bd3/version/1771874591/image.jpg)
+![Stephan](/assets/images/content/bondsfotowedstrijd-2026/04.jpg)
 
 ## Margreet
 
-![Margreet](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i8212dfb671002bb4/version/1771874576/image.jpg)
+![Margreet](/assets/images/content/bondsfotowedstrijd-2026/05.jpg)
 
 ## Guido
 
-![Guido](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/if87480a0ccff6932/version/1771874568/image.jpg)
+![Guido](/assets/images/content/bondsfotowedstrijd-2026/06.jpg)
 
 ## Brenda
 
-![Brenda](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/ic9ccdd487543bd48/version/1771874541/image.jpg)
+![Brenda](/assets/images/content/bondsfotowedstrijd-2026/07.jpg)
 
 ## Hank
 
-![Hank](https://image.jimcdn.com/app/cms/image/transf/none/path/s996a626ed2704e34/image/ife04e6ee8721ff90/version/1771874530/image.jpg)
+![Hank](/assets/images/content/bondsfotowedstrijd-2026/08.jpg)
 
 ## Marco
 
-![Marco](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i2aa28a8af1d00de0/version/1771874499/image.jpg)
+![Marco](/assets/images/content/bondsfotowedstrijd-2026/09.jpg)
 
 ## Liesbeth
 
-![Something Blue - Liesbeth](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i892159c23934c187/version/1771874509/image.jpg)
+![Something Blue - Liesbeth](/assets/images/content/bondsfotowedstrijd-2026/10.jpg)

@@ -5,19 +5,19 @@ title: Clubnieuws
 
 ## 4 maart 2025 — Margreet wint FACT uitwisselingswedstrijd
 
-![Margreet wint FACT uitwisselingswedstrijd](https://image.jimcdn.com/app/cms/image/transf/dimension=2000x1500:format=jpg/path/s996a626ed2704e34/image/iaa08d53974a90060/version/1741096877/margreet-wint-fact-uitwisselingswedstrijd.jpg)
+![Margreet wint FACT uitwisselingswedstrijd](/assets/images/content/clubnieuws/02.jpg)
 
 Voor de tweede jaar op rij gaat Beeldspraak er met de winst van de uitwisselwedstrijd van de afdeling Noord van de fotobond (FACT) vandoor. Deze keer viel de eer toe aan Margreet.
 
 ## 30 december 2024 — Workshop Portret bij Jan Kruize
 
-![Workshop Portret bij Jan Kruize](https://image.jimcdn.com/app/cms/image/transf/dimension=2000x1500:format=jpg/path/s996a626ed2704e34/image/i6e3008c07e183ba5/version/1735932319/workshop-portret-bij-jan-kruize.jpg)
+![Workshop Portret bij Jan Kruize](/assets/images/content/clubnieuws/03.jpg)
 
 De werkgroep portretfotografie heeft op 10 december een avondworkshop modelfotografie bij fotograaf Jan Kruize gevolgd.
 
 ## 21 december 2023 — Brenda krijgt 'zilver' bij Fotobond
 
-![Brenda krijgt zilver bij Fotobond](https://image.jimcdn.com/app/cms/image/transf/dimension=567x10000:format=jpg/path/s996a626ed2704e34/image/i79fbca2fbbd1b1a1/version/1703182002/image.jpg)
+![Brenda krijgt zilver bij Fotobond](/assets/images/content/clubnieuws/01.jpg)
 
 Brenda heeft meegedaan aan FotoOnLine 2023 2e editie en daar de waardering 'zilver' behaald. Uiteraard is dat een mooie prestatie en aangezien Brenda lid is van Beeldspraak zijn we daar trots op. Gefeliciteerd Brenda, of zoals we bij Beeldspraak zeggen "vooral doorgaan ....".
 

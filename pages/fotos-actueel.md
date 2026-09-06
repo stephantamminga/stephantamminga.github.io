@@ -22,4 +22,4 @@ Maak hiernaast in de grijze kolom een keuze.
 
 Voor de leden:
 
-Foto's of andere bijdragen voor de website kun je sturen aan de webmaster: ron-meiburg@home.nl
+Foto's of andere bijdragen voor de website kun je sturen aan de webmaster: website@fotoclubbeeldspraak.nl

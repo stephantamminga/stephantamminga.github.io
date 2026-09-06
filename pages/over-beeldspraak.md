@@ -7,7 +7,7 @@ Fotoclub Beeldspraak, voluit: Amateur Fotografen Vereniging "Beeldspraak", besta
 
 Wil je een beetje een indruk krijgen van het verloop van onze clubavonden, blader dan eens door het laatste jaarverslag, dat je hieronder kunt downloaden.
 
-- [Jaarverslag seizoen 2024-2025 (PDF)](https://www.fotoclubbeeldspraak.nl/app/download/13451449699/Jaarverslag+seizoen+2024-2025.pdf)
+- [Jaarverslag seizoen 2024-2025 (PDF)](/assets/files/Jaarverslag-seizoen-2024-2025.pdf)
 
 ## Word lid
 
@@ -34,8 +34,8 @@ Fotoclub Beeldspraak komt op dinsdagavonden (data zie agenda) om 20.00 uur bijee
 
 Het bestuur van AFV Beeldspraak hecht veel waarde aan de privacy van de leden. Hieronder het privacy-reglement van de club.
 
-- [Privacyreglement fc Beeldspraak (PDF)](https://www.fotoclubbeeldspraak.nl/app/download/13451444199/20180508+Privacyreglement+fc+Beeldspraak.pdf)
+- [Privacyreglement fc Beeldspraak (PDF)](/assets/files/20180508-Privacyreglement-fc-Beeldspraak.pdf)
 
 ## Statuten
 
-- [Statuten Beeldspraak (DOCX)](https://www.fotoclubbeeldspraak.nl/app/download/13451445699/Statuten+Beeldspraak.docx)
+- [Statuten Beeldspraak (DOCX)](/assets/files/Statuten-Beeldspraak.docx)

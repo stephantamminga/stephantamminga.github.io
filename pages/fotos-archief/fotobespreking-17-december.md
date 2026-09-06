@@ -6,28 +6,28 @@ parent: Foto's archief
 
 # Fotobespreking 17 december
 
-![](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i698355bf78f1b12c/version/1735551630/image.jpg)
+![](/assets/images/content/fotobespreking-17-december/01.jpg)
 
-![Muur](https://image.jimcdn.com/app/cms/image/transf/none/path/s996a626ed2704e34/image/i9455ca046dd53a25/version/1735551630/image.jpg)
+![Muur](/assets/images/content/fotobespreking-17-december/02.jpg)
 
-![](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i275520ec61142582/version/1735551630/image.jpg)
+![](/assets/images/content/fotobespreking-17-december/03.jpg)
 
-![Herfst](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i02db6c0d9677c9df/version/1735551631/image.jpg)
+![Herfst](/assets/images/content/fotobespreking-17-december/04.jpg)
 
-![](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i94a0ace40e597596/version/1735551631/image.jpg)
+![](/assets/images/content/fotobespreking-17-december/05.jpg)
 
-![Bar laat](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/ida022ae2dcf58e51/version/1735551631/image.jpg)
+![Bar laat](/assets/images/content/fotobespreking-17-december/06.jpg)
 
-![Kikker - Genre: Natuur](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/ic5831ca47d2f0a60/version/1735551631/image.jpg)
+![Kikker - Genre: Natuur](/assets/images/content/fotobespreking-17-december/07.jpg)
 
-![Onweerslucht](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/id340c0536646d346/version/1735551632/image.jpg)
+![Onweerslucht](/assets/images/content/fotobespreking-17-december/08.jpg)
 
-![](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i69d2ca23dd4a1c57/version/1735551632/image.jpg)
+![](/assets/images/content/fotobespreking-17-december/09.jpg)
 
-![Hoe zit dat?](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i837c60b37992a28d/version/1735551632/image.jpg)
+![Hoe zit dat?](/assets/images/content/fotobespreking-17-december/10.jpg)
 
-![](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/idc8e90e727e13024/version/1735551633/image.jpg)
+![](/assets/images/content/fotobespreking-17-december/11.jpg)
 
 ### 2e keuze
 
-![](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i6ab81a196f21b109/version/1735551633/image.jpg)
+![](/assets/images/content/fotobespreking-17-december/12.jpg)

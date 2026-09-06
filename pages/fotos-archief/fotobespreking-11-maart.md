@@ -6,34 +6,34 @@ parent: Foto's archief
 
 # Fotobespreking 11 maart
 
-![1pk](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/ic48b973d88ba6229/version/1743962957/image.jpg)
+![1pk](/assets/images/content/fotobespreking-11-maart/01.jpg)
 
-![](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i67e3f3b5f51c4516/version/1743962958/image.jpg)
+![](/assets/images/content/fotobespreking-11-maart/02.jpg)
 
-![](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/ie4b3cda729759f64/version/1743962958/image.jpg)
+![](/assets/images/content/fotobespreking-11-maart/03.jpg)
 
-![](https://image.jimcdn.com/app/cms/image/transf/none/path/s996a626ed2704e34/image/i7ebe1485a3fd73e6/version/1743962959/image.jpg)
+![](/assets/images/content/fotobespreking-11-maart/04.jpg)
 
-![](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i9d40bdbda3cecd71/version/1743962959/image.jpg)
+![](/assets/images/content/fotobespreking-11-maart/05.jpg)
 
-![](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i6e7c7e377ed7fad1/version/1743962959/image.jpg)
+![](/assets/images/content/fotobespreking-11-maart/06.jpg)
 
-![Roodborstje](https://image.jimcdn.com/app/cms/image/transf/none/path/s996a626ed2704e34/image/idba445f9e855b2d3/version/1743962959/image.jpg)
+![Roodborstje](/assets/images/content/fotobespreking-11-maart/07.jpg)
 
-![Contemplatie](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/ic6148c9f3e4cf369/version/1743962959/image.jpg)
+![Contemplatie](/assets/images/content/fotobespreking-11-maart/08.jpg)
 
-![](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i10897156324b77a4/version/1743962960/image.jpg)
+![](/assets/images/content/fotobespreking-11-maart/09.jpg)
 
-![IJsbloem](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i41f79725ea466d04/version/1743962961/image.jpg)
+![IJsbloem](/assets/images/content/fotobespreking-11-maart/10.jpg)
 
-![Impressie](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i2918426d1cd8cf75/version/1743962961/image.jpg)
+![Impressie](/assets/images/content/fotobespreking-11-maart/11.jpg)
 
-![Rode wouw](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i2ed5240855cf8714/version/1743962961/image.jpg)
+![Rode wouw](/assets/images/content/fotobespreking-11-maart/12.jpg)
 
-![Roccamodour](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/i30cd800082587d05/version/1743962962/image.jpg)
+![Roccamodour](/assets/images/content/fotobespreking-11-maart/13.jpg)
 
-![Calimero](https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s996a626ed2704e34/image/iaf800ad88505f1f2/version/1743962962/image.jpg)
+![Calimero](/assets/images/content/fotobespreking-11-maart/14.jpg)
 
 ### 2e keuze
 
-![Lepelaar](https://image.jimcdn.com/app/cms/image/transf/none/path/s996a626ed2704e34/image/if635cdf517b97677/version/1743962962/image.jpg)
+![Lepelaar](/assets/images/content/fotobespreking-11-maart/15.jpg)

@@ -48,5 +48,5 @@ Kort en bondig en voor zover zinvol:
 
 ### Downloads
 
-- [Handreiking fotobespreking (PDF)](https://www.fotoclubbeeldspraak.nl/app/download/9048695199/Handreiking.pdf)
-- [Bespreekformulier (PDF)](https://www.fotoclubbeeldspraak.nl/app/download/9048715099/Bespreekformulier.pdf)
+- [Handreiking fotobespreking (PDF)](/assets/files/Handreiking.pdf)
+- [Bespreekformulier (PDF)](/assets/files/Bespreekformulier.pdf)
