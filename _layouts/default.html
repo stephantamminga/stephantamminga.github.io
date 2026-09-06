@@ -20,6 +20,20 @@
 
   {% include footer.html %}
 
+  <!-- Image Lightbox Modal -->
+  <div class="modal-overlay" id="modalOverlay"></div>
+  <div class="modal" id="imageModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <img class="modal-image" id="modalImage" alt="">
+      <div class="modal-caption" id="modalCaption"></div>
+      <div class="modal-nav">
+        <button class="modal-nav-button prev" id="modalPrev" disabled>&larr;</button>
+        <button class="modal-nav-button next" id="modalNext" disabled>&rarr;</button>
+      </div>
+    </div>
+  </div>
+
   <script src="{{ '/js/main.js' | relative_url }}"></script>
 </body>
 </html>
