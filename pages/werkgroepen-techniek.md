@@ -3,8 +3,6 @@ layout: page
 title: Techniek
 ---
 
-# Werkgroep Techniek
-
 ## Wat is een Moiré effect en wat kun je daar aan doen
 
 Bij een van de bespreekavonden kwam onderstaande foto aan bod (klik op de foto voor een groter beeld):

@@ -3,8 +3,6 @@ layout: page
 title: Clubnieuws
 ---
 
-# Clubnieuws
-
 ## 4 maart 2025 — Margreet wint FACT uitwisselingswedstrijd
 
 ![Margreet wint FACT uitwisselingswedstrijd](https://image.jimcdn.com/app/cms/image/transf/dimension=2000x1500:format=jpg/path/s996a626ed2704e34/image/iaa08d53974a90060/version/1741096877/margreet-wint-fact-uitwisselingswedstrijd.jpg)

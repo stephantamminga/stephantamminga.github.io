@@ -3,8 +3,6 @@ layout: page
 title: Werkgroepen
 ---
 
-# Werkgroepen 2023/2024
-
 De werkgroepen bepalen zelf hun werkwijze en activiteiten.
 
 De aanspreekpunten zijn niet verantwoordelijk voor het functioneren van de werkgroep maar nemen initiatief tot onderling overleg en zijn contactpunt.

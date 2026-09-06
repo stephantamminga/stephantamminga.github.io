@@ -3,8 +3,6 @@ layout: page
 title: Foto's archief
 ---
 
-# Foto's archief
-
 Hieronder een overzicht van de gearchiveerde fotobesprekingen en thema's. Klik op een onderwerp om de foto's te bekijken.
 
 - [Fotobespreking 14 april](fotos-archief/fotobespreking-14-april/)

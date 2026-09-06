@@ -3,8 +3,6 @@ layout: page
 title: Foto's van leden
 ---
 
-# Foto's
-
 Bij een fotoclub draait het natuurlijk om de foto's.
 
 - foto's van clubleden - De leden tonen een selectie van hun werk.

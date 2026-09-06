@@ -3,8 +3,6 @@ layout: page
 title: Links
 ---
 
-# Links
-
 ## Clubleden
 
 - [Liesbeth Timmermans](http://liesbethtimmermans.weebly.com/)

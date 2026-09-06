@@ -3,8 +3,6 @@ layout: page
 title: Foto van de maand
 ---
 
-# Foto van de maand
-
 Iedere maand kiezen de clubleden aan het eind van de bespreekavond een 'foto van de maand' (klik op de foto voor grote weergave).
 
 - [© André Krale - januari 2026, Thema: It's so good](https://image.jimcdn.com/app/cms/image/transf/dimension=150x150:format=jpg/path/s996a626ed2704e34/image/i352ccc9d81aec339/version/1778696908/image.jpg)

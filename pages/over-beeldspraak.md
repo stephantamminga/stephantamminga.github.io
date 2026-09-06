@@ -3,8 +3,6 @@ layout: page
 title: Over Beeldspraak
 ---
 
-# Over Beeldspraak
-
 Fotoclub Beeldspraak, voluit: Amateur Fotografen Vereniging "Beeldspraak", bestaat formeel sinds 15 mei 1984. Sinds de oprichting is er veel veranderd, de aloude film is verdwenen en inmiddels gebruiken de meeste leden moderne systeem camera's en soms ook wel een telefoon. Bespreken van foto's gaat met behulp van een 85 inch beeldscherm, al is de mogelijkheid om afdrukken te bespreken middels een lichtbak nog wel aanwezig!
 
 Wil je een beetje een indruk krijgen van het verloop van onze clubavonden, blader dan eens door het laatste jaarverslag, dat je hieronder kunt downloaden.
