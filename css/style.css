@@ -187,6 +187,124 @@ h1, h2, h3, h4, h5, h6 {
 }
 .content .state-error { color: var(--accent); }
 
+/* ============================================================= */
+/* Image Lightbox / Modal                                        */
+/* ============================================================= */
+
+/* Modal backdrop */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.modal-overlay.visible {
+  display: block;
+  opacity: 1;
+}
+
+/* Modal container */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1001;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.modal.visible {
+  display: flex;
+  opacity: 1;
+}
+
+/* Modal content */
+.modal-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  text-align: center;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.modal-caption {
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+  padding: 0 1rem;
+  max-width: 80vw;
+}
+
+/* Navigation arrows */
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.modal-nav-button {
+  pointer-events: all;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+  margin: 0 1rem;
+}
+.modal-nav-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.modal-nav-button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.modal-nav-button.prev { padding-right: 0; }
+.modal-nav-button.next { padding-left: 0; }
+
+/* Close button */
+.modal-close {
+  position: absolute;
+  top: -45px;
+  right: 0;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+.modal-close:hover { color: #ccc; }
+
+/* Make images in content clickable */
+.content img {
+  cursor: pointer;
+}
+
 /* ---- Nav toggle button (mobile only; hidden on desktop) ---- */
 .nav-toggle {
   display: none;
