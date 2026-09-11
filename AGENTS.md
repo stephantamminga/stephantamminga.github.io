@@ -638,6 +638,8 @@ title: Page Title
 
 Set up and maintain repository-specific agent skills using the interoperable Agent Skills format.
 
+**Skill discovery:** Agents working in this repository must consult `.agents/skills/` before performing content work and follow the `SKILL.md` whose `description` matches the current task. See Section 18 for the full skills convention.
+
 ### 18.1 Repository location
 
 Use the following directory as the repository-level source of truth:
@@ -1081,6 +1083,7 @@ This guidelines document is maintained as the project evolves. Significant chang
 
 - **v1.0** (2026-09-06): Initial comprehensive guidelines based on existing codebase analysis
 - **v1.1** (2026-09-11): Added Section 18 — Repository Agent Skills Convention (`.agents/skills/`)
+- **v1.2** (2026-09-11): Added Section 18 skill-discovery pointer (agents must consult `.agents/skills/` before content work)
 
 ---
 
