@@ -176,6 +176,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .content .photo-highlight { text-align: center; margin: 1rem 0; }
 .content .photo-caption { font-size: 0.85rem; color: #555; }
+.content .news-list ul {
+  list-style: disc;
+  margin: 0;
+  padding-left: 1.25rem;
+}
+.content .news-list li {
+  margin: 0.35rem 0;
+  line-height: 1.5;
+}
 .content .news-highlight { font-weight: 600; }
 
 /* loading / error states */

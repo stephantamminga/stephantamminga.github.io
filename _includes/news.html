@@ -1,0 +1,10 @@
+{%- assign news_items = site.data.news.items -%}
+{%- if news_items and news_items.size > 0 -%}
+<div class="news-list">
+  <ul>
+  {%- for item in news_items -%}
+    <li>{{ item.text }}</li>
+  {%- endfor -%}
+  </ul>
+</div>
+{%- endif -%}

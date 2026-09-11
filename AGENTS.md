@@ -148,7 +148,16 @@ This document defines all governing guidelines for page layouts, tool usage, and
 - **Display**: 1-3 recommended photos, responsive grid
 - **Format**: YAML array with filename, title, credit
 
-### 4.4 Navigation Rules
+### 4.4 Homepage News List
+- **Location**: `_includes/news.html`
+- **Data source**: `_data/news.yml` (ordered list of news items)
+- **Pattern**: Data-driven \u2014 `news.html` loops over `site.data.news.items` and renders a `<ul>`; no news items are hardcoded in the homepage template
+- **Item fields**: `text` (single line of news text)
+- **Usage**: `{% include news.html %}` on the homepage under the `<h3>Laatste nieuws</h3>` heading
+- **Order**: Items render in YAML list order \u2014 reorder by moving entries in `_data/news.yml`
+- **Updates**: Add/remove/edit items in `_data/news.yml`; the homepage updates automatically. Use real characters (-, --, (c)) rather than HTML entities.
+
+### 4.5 Navigation Rules
 - **Add new pages**: Add an entry to `_data/navigation.yml` (the template renders it automatically)
 - **Sub-pages**: Add the entry under the parent item's `children` list
 - **Active states**: Set each item's `match` (substring) or use `match` + `exact: true` (equality); do not edit the template
@@ -513,7 +522,9 @@ tags:
 - **Naming**: snake_case for filenames
 
 ### 13.2 Current Data Files
+- **navigation.yml**: Sidebar navigation menu
 - **nav_photos.yml**: Navigation photo gallery configuration
+- **news.yml**: Homepage "Laatste nieuws" items
 
 ### 13.3 Data File Rules
 - **Validation**: Always validate YAML syntax

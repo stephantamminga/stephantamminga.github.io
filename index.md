@@ -10,14 +10,7 @@ title: Fotoclub Beeldspraak
 <p>Verder nodigen we gastsprekers uit, gaan samen op stap, bezoeken andere clubs of verdiepen ons in technieken.</p>
 
 <h3>Laatste nieuws</h3>
-<div class="news-list">
-  - 8 september starten we weer &ndash; ALV &ndash; Foto van seizoen 2025/2026 &ndash; Foto van de maand mei.
-  - Foto van de maand Mei &ndash;Check ook het archief voor eerdere foto's van de maand &ndash; &copy; Andr&eacute; Krale.
-  - Thema Photorun 2026 &ndash; &ldquo;It's so good&rdquo;. Op 12 mei bespreken we de resultaten van de Photorun 2026.
-  - De data voor het komende seizoen 2026&ndash;2027 staan vast.
-  - Download hier de calendar file voor in je Google/Outlook/Thunderbird etc. agenda, dan mis je nooit een bijeenkomst.
-  - 14 april bespreken we vrij werk zonder thema.
-</div>
+{% include news.html %}
 
 <h3>Wedstrijden &amp; resultaten</h3>
 <p>Guido wint 2e plaats op FACT-wedstrijd onder thema &ldquo;Ingang/uitgang&rdquo;. Zie foto hieronder.</p>
