@@ -28,17 +28,15 @@ description: Prioritized list of issues and enhancements with severity, impact, 
 
 ## 🔧 HIGH PRIORITY - System Improvements
 
-### 4. Automated Data-Driven Navigation
+### 4. Automated Data-Driven Navigation ✅ DONE
 - **Issue**: `_includes/nav.html` (93 lines) manually maintained. Contains hardcoded URLs for 65+ pages. Error-prone as site grows.
-- **Current State**: Mostly in sync but requires manual updates for every new page
-- **Impact**: Maintenance burden, risk of broken links, inconsistent active states
-- **Solution**: 
-  - Add front matter metadata to pages (e.g., `nav_title:`, `nav_order:`, `nav_parent:`)
-  - Create Jekyll plugin or Liquid template to auto-generate navigation from page collection
-  - Maintain manual overrides for special cases
-- **Effort**: 4-6 hours
-- **Dependencies**: None (pure Liquid possible)
-- **Validation**: Navigation renders correctly, all links work
+- **Resolution**: Navigation is now data-driven. The menu is defined in
+  `_data/navigation.yml` (ordered list of items: `title`, `url`, `match`,
+  optional `exact`, optional `children`); `_includes/nav.html` renders it with a
+  Liquid loop. No menu entries are hardcoded in the template.
+- **Validation**: Verified equivalent to the previous manual nav — identical
+  order, labels, URLs, and active-state behavior across all 63 entries and 131
+  page-URL variants. To add/reorder pages, edit `_data/navigation.yml`.
 
 ### 5. Agenda as Data with Auto-Generated ICS
 - **Issue**: Agenda data duplicated across:
@@ -179,7 +177,7 @@ description: Prioritized list of issues and enhancements with severity, impact, 
 ### Phase 2: System Improvements (Week 2-3)
 - [ ] #4 - Fix contact form (Formspree)
 - [ ] #5 - Create 404 page
-- [ ] #6 - Automated navigation generation
+- [x] #6 - Automated navigation generation
 - [ ] #7 - Agenda as data with ICS generation
 
 ### Phase 3: Quality of Life (Week 4+)

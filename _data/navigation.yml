@@ -1,0 +1,205 @@
+# Main navigation for Fotoclub Beeldspraak
+# Rendered by _includes/nav.html from this file.
+# Edit this file to change menu order, labels, or nesting.
+# Each item fields:
+#   title    - link text
+#   url      - page path (relative_url filter applied)
+#   match    - string tested against page.url for active state
+#   exact    - optional; when true, use equality instead of substring match
+#   children - optional list of nested items
+
+- title: Homepage
+  url: "/"
+  match: "/"
+  exact: true
+- title: Clubnieuws
+  url: "/pages/clubnieuws"
+  match: "clubnieuws"
+- title: Werkgroepen
+  url: "/pages/werkgroepen"
+  match: "werkgroepen"
+  children:
+  - title: Techniek
+    url: "/pages/werkgroepen-techniek"
+    match: "werkgroepen-techniek"
+- title: Agenda 2025/26
+  url: "/pages/agenda-2025-26"
+  match: "agenda-2025-26"
+- title: Agenda 2026/27
+  url: "/pages/agenda-2026-27"
+  match: "agenda-2026-27"
+- title: Activiteitenkalender
+  url: "/pages/activiteitenkalender"
+  match: "activiteitenkalender"
+- title: Fotobespreking werkwijze
+  url: "/pages/fotobespreking-werkwijze"
+  match: "fotobespreking-werkwijze"
+  children:
+  - title: Fotobespreking hulp
+    url: "/pages/fotobespreking-werkwijze/fotobespreking-hulp"
+    match: "fotobespreking-hulp"
+  - title: Genres bij Beeldspraak
+    url: "/pages/fotobespreking-werkwijze/genres-bij-beeldspraak"
+    match: "genres-bij-beeldspraak"
+- title: "Foto's actueel"
+  url: "/pages/fotos-actueel"
+  match: "fotos-actueel"
+  children:
+  - title: Selectie foto seizoen 2025/26
+    url: "/pages/fotos-actueel/selectie-foto-seizoen-2025-26"
+    match: "selectie-foto-seizoen"
+  - title: Fotobespreking 12 mei
+    url: "/pages/fotos-actueel/fotobespreking-12-mei"
+    match: "fotobespreking-12-mei"
+- title: "Foto's archief"
+  url: "/pages/fotos-archief"
+  match: "fotos-archief"
+  children:
+  - title: Fotobespreking 14 april
+    url: "/pages/fotos-archief/fotobespreking-14-april"
+    match: "fotobespreking-14-april"
+  - title: Bondsfotowedstrijd 2026
+    url: "/pages/fotos-archief/bondsfotowedstrijd-2026"
+    match: "bondsfotowedstrijd-2026"
+  - title: Fotobespreking 3 februari
+    url: "/pages/fotos-archief/fotobespreking-3-februari"
+    match: "fotobespreking-3-februari"
+  - title: Fotobespreking 6 januari
+    url: "/pages/fotos-archief/fotobespreking-6-januari"
+    match: "fotobespreking-6-januari"
+  - title: Fotobespreking 11 november
+    url: "/pages/fotos-archief/fotobespreking-11-november"
+    match: "fotobespreking-11-november"
+  - title: Fotobespreking 28 oktober
+    url: "/pages/fotos-archief/fotobespreking-28-oktober"
+    match: "fotobespreking-28-oktober"
+  - title: Fotobespreking 7 oktober - Photorun 2025
+    url: "/pages/fotos-archief/fotobespreking-7-oktober-photorun-2025"
+    match: "fotobespreking-7-oktober"
+  - title: Bondsfotowedstrijd 2025
+    url: "/pages/fotos-archief/bondsfotowedstrijd-2025"
+    match: "bondsfotowedstrijd-2025"
+  - title: Fotobespreking 23 sept - vakantiethema
+    url: "/pages/fotos-archief/fotobespreking-23-sept-vakantiethema"
+    match: "fotobespreking-23-sept"
+  - title: Fotobespreking 13 mei series
+    url: "/pages/fotos-archief/fotobespreking-13-mei-series"
+    match: "fotobespreking-13-mei"
+  - title: Fotobespreking 22 april
+    url: "/pages/fotos-archief/fotobespreking-22-april"
+    match: "fotobespreking-22-april"
+  - title: Fotobespreking 8 april
+    url: "/pages/fotos-archief/fotobespreking-8-april"
+    match: "fotobespreking-8-april"
+  - title: Foto van het seizoen 2023/24
+    url: "/pages/fotos-archief/foto-van-het-seizoen-2023-24"
+    match: "foto-van-het-seizoen"
+  - title: Fotobespreking 11 maart
+    url: "/pages/fotos-archief/fotobespreking-11-maart"
+    match: "fotobespreking-11-maart"
+  - title: Fotobespreking 11 februari
+    url: "/pages/fotos-archief/fotobespreking-11-februari"
+    match: "fotobespreking-11-februari"
+  - title: Energie(k) Groningen - Beeldspraak
+    url: "/pages/fotos-archief/energie-k-groningen-beeldspraak"
+    match: "energie-k-groningen"
+  - title: Fotobespreking 14 januari
+    url: "/pages/fotos-archief/fotobespreking-14-januari"
+    match: "fotobespreking-14-januari"
+  - title: Fotobespreking 17 december
+    url: "/pages/fotos-archief/fotobespreking-17-december"
+    match: "fotobespreking-17-december"
+  - title: Fotobespreking 19 november
+    url: "/pages/fotos-archief/fotobespreking-19-november"
+    match: "fotobespreking-19-november"
+  - title: Fotobespreking 8 oktober
+    url: "/pages/fotos-archief/fotobespreking-8-oktober"
+    match: "fotobespreking-8-oktober"
+  - title: Fotobespreking 24 september
+    url: "/pages/fotos-archief/fotobespreking-24-september"
+    match: "fotobespreking-24-september"
+  - title: "Foto's vakantiethema 2024"
+    url: "/pages/fotos-archief/foto-s-vakantiethema-2024"
+    match: "foto-s-vakantiethema-2024"
+  - title: "URBEX foto's"
+    url: "/pages/fotos-archief/urbex-foto-s"
+    match: "urbex-foto-s"
+  - title: "Foto's wg Macrofotografie"
+    url: "/pages/fotos-archief/foto-s-wg-macrofotografie"
+    match: "foto-s-wg-macrofotografie"
+  - title: "Foto's vakantiethema 2023"
+    url: "/pages/fotos-archief/foto-s-vakantiethema-2023"
+    match: "foto-s-vakantiethema-2023"
+  - title: "Thema \"Uitzicht/Uit zicht\""
+    url: "/pages/fotos-archief/thema-uitzicht-uit-zicht"
+    match: "thema-uitzicht"
+  - title: "Eemshaven foto's"
+    url: "/pages/fotos-archief/eemshaven-foto-s"
+    match: "eemshaven"
+  - title: Fotobespreking 28 mei Photorun 2024
+    url: "/pages/fotos-archief/fotobespreking-28-mei-photorun-2024"
+    match: "fotobespreking-28-mei"
+- title: Foto van de maand
+  url: "/pages/foto-van-de-maand"
+  match: "foto-van-de-maand"
+- title: "Foto's van leden"
+  url: "/pages/fotos-van-leden"
+  match: "fotos-van-leden"
+  children:
+  - title: Ieder lid heeft eigen pagina
+    url: "/pages/fotos-van-leden/ieder-lid-heeft-eigen-pagina"
+    match: "ieder-lid-heeft-eigen-pagina"
+  - title: Stephan Tamminga
+    url: "/pages/fotos-van-leden/stephan-tamminga"
+    match: "stephan-tamminga"
+  - title: Guido Kamp
+    url: "/pages/fotos-van-leden/guido-kamp"
+    match: "guido-kamp"
+  - title: Stephanie Oosting
+    url: "/pages/fotos-van-leden/stephanie-oosting"
+    match: "stephanie-oosting"
+  - title: Margreet Nagelsmit
+    url: "/pages/fotos-van-leden/margreet-nagelsmit"
+    match: "margreet-nagelsmit"
+  - title: Gerrit Scheeres
+    url: "/pages/fotos-van-leden/gerrit-scheeres"
+    match: "gerrit-scheeres"
+  - title: Marco Harmsen
+    url: "/pages/fotos-van-leden/marco-harmsen"
+    match: "marco-harmsen"
+  - title: Ron Meiburg
+    url: "/pages/fotos-van-leden/ron-meiburg"
+    match: "ron-meiburg"
+  - title: Liesbeth Timmermans
+    url: "/pages/fotos-van-leden/liesbeth-timmermans"
+    match: "liesbeth-timmermans"
+  - title: Simon Bouma
+    url: "/pages/fotos-van-leden/simon-bouma"
+    match: "simon-bouma"
+  - title: Jan Albert Bleeker
+    url: "/pages/fotos-van-leden/jan-albert-bleeker"
+    match: "jan-albert-bleeker"
+  - title: Rinske Hokwerda
+    url: "/pages/fotos-van-leden/rinske-hokwerda"
+    match: "rinske-hokwerda"
+  - title: André Krale
+    url: "/pages/fotos-van-leden/andre-krale"
+    match: "andre-krale"
+  - title: Fred Bakhuis
+    url: "/pages/fotos-van-leden/fred-bakhuis"
+    match: "fred-bakhuis"
+  - title: Ineke Bloemendaal
+    url: "/pages/fotos-van-leden/ineke-bloemendaal"
+    match: "ineke-bloemendaal"
+  - title: Hank Hallegraeff
+    url: "/pages/fotos-van-leden/hank-hallegraeff"
+    match: "hank-hallegraeff"
+- title: Links
+  url: "/pages/links"
+  match: "links"
+- title: Over Beeldspraak
+  url: "/pages/over-beeldspraak"
+  match: "over-beeldspraak"
+- title: Contact
+  url: "/pages/contact"
+  match: "contact"

@@ -45,7 +45,8 @@ This document defines all governing guidelines for page layouts, tool usage, and
 .
 ├── _config.yml              # Site configuration
 ├── _data/                  # Data files (YAML)
-│   └── nav_photos.yml      # Navigation photo gallery data
+│   ├── nav_photos.yml      # Navigation photo gallery data
+│   └── navigation.yml      # Main navigation structure (menu order, labels, nesting)
 ├── _includes/              # Reusable components
 │   ├── head.html           # HEAD section
 │   ├── header.html         # Site header/banner
@@ -134,9 +135,11 @@ This document defines all governing guidelines for page layouts, tool usage, and
 
 ### 4.2 Navigation Implementation
 - **Location**: `_includes/nav.html`
-- **Pattern**: Manual HTML with Liquid conditionals for active states
-- **Active state logic**: Uses `page.url contains 'substring'` for matching
-- **Nested menus**: CSS-controlled visibility (adjacent sibling selector)
+- **Data source**: `_data/navigation.yml` (ordered list of nav items)
+- **Pattern**: Data-driven — `nav.html` loops over `site.data.navigation` and renders the menu; no menu entries are hardcoded in the template
+- **Item fields**: `title` (link text), `url` (page path, `relative_url` filter applied), `match` (string tested against `page.url`), optional `exact: true` (equality instead of substring match), optional `children` (nested list)
+- **Active state logic**: `page.url == item.match` when `exact: true`; otherwise `page.url contains item.match`
+- **Nested menus**: CSS-controlled visibility (adjacent sibling selector `.nav a.active + ul`)
 
 ### 4.3 Navigation Photo Gallery
 - **Data source**: `_data/nav_photos.yml`
@@ -146,9 +149,10 @@ This document defines all governing guidelines for page layouts, tool usage, and
 - **Format**: YAML array with filename, title, credit
 
 ### 4.4 Navigation Rules
-- **Add new pages**: Update `_includes/nav.html` manually
-- **Sub-pages**: Nest under parent `<li>` with `<ul>` for dropdown
-- **Active states**: Use consistent pattern: `{%- if page.url contains 'pagename' %}active{%- endif %}`
+- **Add new pages**: Add an entry to `_data/navigation.yml` (the template renders it automatically)
+- **Sub-pages**: Add the entry under the parent item's `children` list
+- **Active states**: Set each item's `match` (substring) or use `match` + `exact: true` (equality); do not edit the template
+- **Order**: The menu renders in YAML list order — reorder by moving entries in `_data/navigation.yml`
 - **Mobile behavior**: Auto-close on link click, close on viewport resize to desktop
 
 ---
@@ -174,7 +178,7 @@ This document defines all governing guidelines for page layouts, tool usage, and
 - **File paths**: Must use relative_url filter
 
 #### 5.1.4 nav.html
-- **Purpose**: Main navigation structure
+- **Purpose**: Main navigation structure (data-driven, renders `_data/navigation.yml`)
 - **Elements**: Mobile toggle button, navigation tree, overlay
 - **IDs required**: navToggle, nav, navOverlay
 
@@ -416,7 +420,7 @@ tags:
 
 ### 9.1 Component Complexity Limits
 - **Single Responsibility**: Each include file should have one clear purpose
-- **Max lines per include**: 200 lines (nav.html is exception at ~100 lines due to manual structure)
+- **Max lines per include**: 200 lines
 - **CSS file size**: style.css should remain under 500 lines
 - **JS file size**: main.js should remain under 200 lines
 

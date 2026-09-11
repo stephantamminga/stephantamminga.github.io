@@ -74,7 +74,7 @@ Rules (see [references/convention.md](references/convention.md) for examples and
    - It reuses the existing `{{ '/assets/images/content/foto-van-de-maand/<NN>.jpg' | relative_url }}` path convention.
    - Run a git diff after this step and confirm only one new block was added and nothing else changed.
 
-4. **Do not edit** `_includes/nav.html`, `_layouts/`, `_config.yml`, or any data files. The "Foto van de maand" nav entry already exists; the page is a single growing list.
+4. **Do not edit** `_includes/nav.html`, `_data/navigation.yml`, `_layouts/`, or `_config.yml`. The "Foto van de maand" nav entry already exists; the page is a single growing list.
 
 ## Validation
 
@@ -105,7 +105,7 @@ Do not, without explicit request:
 
 - overwrite or delete an existing `<NN>.jpg`;
 - reorder, edit, or remove existing photo blocks on the page;
-- modify `_includes/nav.html`, `_layouts/`, `_config.yml`, or data files;
+- modify `_includes/nav.html`, `_data/navigation.yml`, `_layouts/`, or `_config.yml`;
 - push, merge, or commit to `main` (this skill produces local changes only unless told otherwise).
 
 ## Edge cases

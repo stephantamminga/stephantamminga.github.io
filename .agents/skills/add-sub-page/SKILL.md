@@ -23,10 +23,11 @@ Confirm before starting:
    - Set `layout: page` and `title:` in front matter (both required by AGENTS.md §8.4).
    - Do not create a new layout; only `default` and `page` exist (AGENTS.md §3.3).
 2. If the page has a parent (e.g. a fotobespreking under `fotos-actueel` or `fotos-archief`), place the file under the matching subdirectory: `pages/<parent>/<filename>.md`.
-3. Add a navigation entry in `_includes/nav.html` following the active-state pattern in [references/nav-entry-patterns.md](references/nav-entry-patterns.md).
-   - Top-level: append a new `<li><a ...></a></li>`.
-   - Nested: add a `<li>` inside the parent's `<ul>`.
-   - Match the existing `page.url contains 'substring'` active-state convention exactly; choose a substring unique to the new page.
+3. Add a navigation entry in `_data/navigation.yml` following the pattern in [references/nav-entry-patterns.md](references/nav-entry-patterns.md). The template `_includes/nav.html` renders the menu from this file; do not edit the template.
+   - Top-level: append a new item to the top-level list.
+   - Nested: add an item under the parent's `children` list.
+   - Set `title`, `url`, and `match` (substring tested against `page.url`); use `exact: true` only when the match must be an exact equality (e.g. the homepage).
+   - Choose a `match` substring unique to the new page (see references).
 4. If the page references images:
    - Store web-optimized production images under `assets/images/content/` (AGENTS.md §9.3, §9.4).
    - Reference them with Liquid `relative_url`: `{{ '/assets/images/content/<file>.jpg' | relative_url }}`.
@@ -38,8 +39,8 @@ Confirm before starting:
 Before considering the page complete, verify:
 
 - `pages/<filename>.md` exists with valid YAML front matter (`layout: page`, `title:`).
-- The new `<li>` in `_includes/nav.html` uses the `relative_url` filter and the `page.url contains` active-state class.
-- The active-state substring is unique and does not accidentally match other nav entries.
+- The new item in `_data/navigation.yml` has `title`, `url`, and `match` (the template applies `relative_url`).
+- The `match` substring is unique and does not accidentally match other nav entries.
 - All image paths resolve under `assets/images/` and use `relative_url`.
 - No new layout, plugin, or CSS file was introduced.
 - Content images are web-optimized (≤1200px width, <500KB per file per AGENTS.md §9.3).

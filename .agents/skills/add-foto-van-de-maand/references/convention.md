@@ -7,8 +7,8 @@ Reference for the layout, numbering, and caption format used by the
 
 - Page: `pages/foto-van-de-maand.md`
 - Images: `assets/images/content/foto-van-de-maand/<NN>.jpg`
-- Nav entry: already present in `_includes/nav.html` as a single top-level
-  `<li>` linking to `/pages/foto-van-de-maand`. Do not add another entry.
+- Nav entry: already present in `_data/navigation.yml` as a single top-level
+  item linking to `/pages/foto-van-de-maand`. Do not add another entry.
 
 ## Numbering
 
