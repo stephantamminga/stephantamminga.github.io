@@ -23,6 +23,14 @@ Fotoclub Beeldspraak komt op dinsdagavonden (data zie agenda) om 20.00 uur bijee
 
 **Dorpshuis de Groenenberg**, Markeweg 17, Glimmen.
 
+<div class="map-embed">
+  <iframe
+    src="https://www.openstreetmap.org/export/embed.html?bbox=6.6253%2C53.1413%2C6.6353%2C53.1463&layer=mapnik&marker=53.14382%2C6.63032"
+    loading="lazy"
+    title="Dorpshuis de Groenenberg, Markeweg 17, Glimmen op OpenStreetMap"></iframe>
+</div>
+<p><small><a href="https://www.openstreetmap.org/?mlat=53.14382&mlon=6.63032#map=17/53.14382/6.63032" target="_blank" rel="noopener">Grotere kaart bekijken</a> &ndash; &copy; OpenStreetMap-bijdragers</small></p>
+
 ## Bestuur
 
 - **Stephan Tamminga** - *voorzitter*
