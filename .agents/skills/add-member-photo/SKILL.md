@@ -88,16 +88,18 @@ Run all commands from the repository root.
        plus a `# <Member>` heading and the image lines);
      - adds a Markdown link entry to the member index
        `pages/fotos-van-leden.md` under `## Leden`;
-     - adds a nested `<li>` to the "Foto's van leden" parent's `<ul>` in
-       `_includes/nav.html` using the existing active-state pattern.
+     - adds a nested item to the "Foto's van leden" parent's `children` in
+       `_data/navigation.yml` using the existing active-state pattern (the
+       template `_includes/nav.html` renders the menu from this file).
    - Pass `--slug <member-slug>` only when overriding the derived slug.
    - Run a `git diff` after this step and confirm only the expected files
      changed (the image(s), the member page, and — for new members — the
-     index and nav).
+     index and `nav entry in _data/navigation.yml`).
 
-4. **Do not edit** `_layouts/`, `_config.yml`, `js/main.js`, `css/`, or
-   any data files. The lightbox already handles plain `<img>` elements in
-   the content area, so no JS or layout change is needed.
+4. **Do not edit** `_layouts/`, `_config.yml`, `js/main.js`, or `css/`.
+   The lightbox already handles plain `<img>` elements in the content area, so
+   no JS or layout change is needed. (`_data/navigation.yml` is edited only to
+   add a new member's nav entry, per step 3.)
 
 ## Validation
 
@@ -113,8 +115,8 @@ Before considering the task complete, verify:
   added image, and no existing lines were altered.
 - For a new member: the index `pages/fotos-van-leden.md` has a new
   `- [<Member>](fotos-van-leden/<member-slug>/)` entry, and
-  `_includes/nav.html` has a new nested `<li>` under the "Foto's van leden"
-  parent with a unique `page.url contains '<member-slug>'` substring.
+  `_data/navigation.yml` has a new nested item under the "Foto's van leden"
+  parent with `match: <member-slug>` (a unique substring).
 - The page still builds: if Jekyll is available, run
   `bundle exec jekyll build` and confirm no errors; otherwise confirm the
   markdown is well-formed by eye.

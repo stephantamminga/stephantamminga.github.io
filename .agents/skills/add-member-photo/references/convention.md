@@ -9,8 +9,9 @@ member's page.
 - Member pages: `pages/fotos-van-leden/<member-slug>.md`
 - Member images: `assets/images/content/<member-slug>/<NN>.jpg`
 - Member index: `pages/fotos-van-leden.md` (the "Foto's van leden" overview)
-- Nav parent: the "Foto's van leden" `<li>` in `_includes/nav.html`, whose
-  `<ul>` lists every member as a nested entry.
+- Nav parent: the "Foto's van leden" item in `_data/navigation.yml`, whose
+  `children` list every member as a nested entry. `_includes/nav.html` renders
+  the menu from this file.
 
 ## Member slug
 
@@ -92,15 +93,16 @@ The link target ends with a trailing slash so Jekyll renders the
 
 ## Nav entry
 
-New members get a nested `<li>` inside the "Foto's van leden" parent's
-`<ul>`, following the existing active-state pattern:
+New members get a nested item under the "Foto's van leden" parent's `children`
+list in `_data/navigation.yml`, following the existing active-state pattern:
 
-```html
-<li><a href="{{ '/pages/fotos-van-leden/<member-slug>' | relative_url }}" class="{%- if page.url contains '<member-slug>' %}active{%- endif %}"><Member display name></a></li>
+```yaml
+- title: <Member display name>
+  url: "/pages/fotos-van-leden/<member-slug>"
+  match: "<member-slug>"
 ```
 
-The `page.url contains` substring is the member slug, which is unique per
-member.
+The `match` substring is the member slug, which is unique per member.
 
 ## Real examples
 
