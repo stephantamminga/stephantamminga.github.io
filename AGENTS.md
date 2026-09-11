@@ -634,11 +634,453 @@ title: Page Title
 
 ---
 
-## 18. Version History
+## 18. Repository Agent Skills Convention
+
+Set up and maintain repository-specific agent skills using the interoperable Agent Skills format.
+
+### 18.1 Repository location
+
+Use the following directory as the repository-level source of truth:
+
+```
+<repository-root>/
+└── .agents/
+    └── skills/
+```
+
+Place every repository-specific skill underneath this directory.
+
+Do not create separate copies of the same skill for individual agents unless compatibility requires it.
+
+### 18.2 Skill directory structure
+
+Create one directory per skill:
+
+```
+.agents/
+└── skills/
+    └── <skill-name>/
+        ├── SKILL.md
+        ├── scripts/        # optional
+        ├── references/     # optional
+        └── assets/         # optional
+```
+
+Additional files and directories may be added when useful.
+
+Every skill MUST contain:
+
+- SKILL.md
+
+The other directories are optional.
+
+Use them as follows:
+
+- `scripts/` — executable code for deterministic or repeatable operations.
+- `references/` — documentation, schemas, policies, detailed procedures, or other material the agent should load only when needed.
+- `assets/` — templates, images, example files, configuration templates, lookup data, or other static resources used while producing output.
+
+Keep the skill directory self-contained whenever practical.
+
+### 18.3 Skill naming convention
+
+Use lowercase kebab-case names.
+
+Examples:
+
+- code-review
+- release-validation
+- api-design
+- dependency-upgrade
+- test-failure-analysis
+
+The directory name and the `name` field in `SKILL.md` MUST match.
+
+Names should:
+
+- contain lowercase letters, digits, and hyphens only;
+- not start or end with a hyphen;
+- not contain consecutive hyphens;
+- describe the task or capability rather than the implementation.
+
+Prefer:
+
+```
+release-validation
+```
+
+over:
+
+```
+release-validation-skill
+```
+
+### 18.4 `SKILL.md` format
+
+Every `SKILL.md` MUST contain YAML frontmatter followed by Markdown instructions.
+
+Use this minimal structure:
+
+```markdown
+---
+name: release-validation
+description: Validate a repository release before publication. Use when preparing, checking, or troubleshooting a release candidate.
+---
+
+# Release Validation
+
+Follow these instructions when validating a release.
+
+## Procedure
+
+1. Inspect the release configuration.
+2. Run the required validation checks.
+3. Report failures with actionable remediation.
+4. Do not publish or modify release state unless explicitly requested.
+
+## Output
+
+Report:
+
+- validation status;
+- checks performed;
+- failures or warnings;
+- recommended next actions.
+```
+
+### 18.5 Frontmatter convention
+
+Always include:
+
+```yaml
+name:
+description:
+```
+
+`name`
+
+The `name` MUST match the skill directory name.
+
+`description`
+
+Treat `description` as the primary skill-discovery mechanism.
+
+Write it so an agent can determine:
+
+1. what the skill does;
+2. when it should be used;
+3. important trigger terms or boundaries.
+
+Prefer:
+
+```yaml
+description: Review API changes for backwards compatibility, naming, error handling, and repository API conventions. Use when adding, modifying, or reviewing public API surfaces.
+```
+
+Avoid vague descriptions such as:
+
+```yaml
+description: Helps with APIs.
+```
+
+Put activation and trigger information in `description`, not in a separate "When to use this skill" section buried in the body.
+
+### 18.6 Optional standard frontmatter
+
+Use optional Agent Skills fields only when they add useful information:
+
+```yaml
+---
+name: example
+description: ...
+license: Apache-2.0
+compatibility: Requires git and Python 3.
+metadata:
+  owner: platform-team
+  version: "1.0"
+---
+```
+
+Do not depend on optional or vendor-specific metadata for the skill's core behavior.
+
+Treat `allowed-tools` as non-portable unless the target agents are known to support it consistently.
+
+### 18.7 Writing skill instructions
+
+Write instructions for another agent to execute.
+
+Use imperative language.
+
+Prefer:
+
+1. Read the repository configuration.
+2. Identify changed public interfaces.
+3. Compare them with the compatibility policy.
+4. Report breaking changes before making modifications.
+
+Avoid explanatory prose that does not change agent behavior.
+
+A skill should make the following explicit where applicable:
+
+- required inputs;
+- expected outputs;
+- sequence of operations;
+- validation steps;
+- repository-specific rules;
+- tools or commands to use;
+- actions that require user approval;
+- relevant edge cases;
+- failure handling.
+
+Keep each skill focused on one coherent job.
+
+### 18.8 Keep `SKILL.md` concise
+
+Treat `SKILL.md` as the control plane for the workflow, not as a knowledge dump.
+
+Keep the main instructions concise and preferably below approximately 500 lines.
+
+Move detailed information into `references/`.
+
+For example:
+
+```
+api-review/
+├── SKILL.md
+└── references/
+    ├── compatibility.md
+    ├── naming.md
+    └── error-model.md
+```
+
+Then reference those files explicitly from `SKILL.md`:
+
+```markdown
+For public compatibility rules, read
+[references/compatibility.md](references/compatibility.md).
+
+For error conventions, read
+[references/error-model.md](references/error-model.md).
+```
+
+Load supporting references only when relevant to the current task.
+
+### 18.9 Reference files directly
+
+Use relative paths from the skill root.
+
+Prefer:
+
+```markdown
+Read [references/schema.md](references/schema.md).
+```
+
+Avoid chains such as:
+
+```
+SKILL.md
+  -> references/index.md
+      -> references/subsystem/index.md
+          -> references/subsystem/details.md
+```
+
+Keep important supporting material directly discoverable from `SKILL.md`.
+
+### 18.10 Use scripts selectively
+
+Add scripts when deterministic execution improves reliability.
+
+Good uses include:
+
+- validation;
+- code generation;
+- structured file conversion;
+- repository inspection;
+- repeated calculations;
+- fragile command sequences.
+
+Example:
+
+```
+release-validation/
+├── SKILL.md
+└── scripts/
+    └── validate-release.sh
+```
+
+Reference the script explicitly:
+
+```markdown
+Run:
+
+scripts/validate-release.sh
+```
+
+If the script exits non-zero, report the failure and inspect its output before continuing.
+
+Do not replace straightforward reasoning or text transformation with unnecessary scripts.
+
+### 18.11 Separate repository instructions from skills
+
+Use repository-level instruction files such as `AGENTS.md` for guidance that should apply broadly to repository work.
+
+Examples:
+
+- build commands;
+- mandatory test commands;
+- architecture constraints;
+- coding conventions;
+- repository-wide safety rules.
+
+Use `.agents/skills/` for reusable task-specific workflows.
+
+Example:
+
+`AGENTS.md`
+
+might state:
+
+```markdown
+Run unit tests before submitting code changes.
+```
+
+while:
+
+```
+.agents/skills/release-validation/SKILL.md
+```
+
+defines the complete workflow for preparing and validating a release.
+
+Do not duplicate large amounts of repository guidance inside every skill. Reference the repository convention where appropriate.
+
+### 18.12 Cross-agent compatibility
+
+Treat:
+
+```
+.agents/skills/
+```
+
+as the canonical repository copy.
+
+Keep the core skill compliant with the Agent Skills `SKILL.md` format.
+
+When another agent requires a vendor-specific discovery directory, prefer a compatibility link or adapter rather than duplicating skill contents.
+
+For example, where supported by the environment:
+
+```
+.claude/skills -> ../.agents/skills
+```
+
+Do not create diverging copies such as:
+
+```
+.agents/skills/release/SKILL.md
+.claude/skills/release/SKILL.md
+.github/skills/release/SKILL.md
+```
+
+unless symlinks or equivalent compatibility mechanisms are unavailable.
+
+There should normally be one authoritative copy of each skill.
+
+### 18.13 Vendor-specific extensions
+
+Keep vendor-specific files additive.
+
+For example, an OpenAI-specific skill may optionally contain:
+
+```
+<skill-name>/
+├── SKILL.md
+├── agents/
+│   └── openai.yaml
+├── scripts/
+├── references/
+└── assets/
+```
+
+Do not make vendor-specific metadata necessary to understand or execute the basic workflow unless the skill is intentionally vendor-specific.
+
+The portable behavior belongs in `SKILL.md`.
+
+### 18.14 Progressive disclosure
+
+Design skills so agents can load information incrementally:
+
+- Level 1: name + description
+- Level 2: SKILL.md
+- Level 3: references/scripts/assets as needed
+
+Therefore:
+
+- make `description` sufficient for discovery;
+- keep `SKILL.md` focused;
+- move detailed background material into `references/`;
+- avoid loading unrelated reference material;
+- avoid large monolithic skills.
+
+### 18.15 Validation checklist
+
+Before considering a skill complete, verify:
+
+- `.agents/skills/<skill-name>/` exists;
+- `SKILL.md` exists;
+- YAML frontmatter parses correctly;
+- `name` matches the directory name;
+- `name` uses lowercase kebab-case;
+- `description` explains both capability and trigger conditions;
+- instructions use clear imperative language;
+- inputs and outputs are explicit where relevant;
+- referenced files actually exist;
+- referenced paths are relative to the skill root;
+- unnecessary generated or placeholder files are removed;
+- detailed material is moved out of an oversized `SKILL.md`;
+- scripts are executable and tested where practical;
+- core behavior does not depend unnecessarily on one agent vendor.
+
+If the `skills-ref` validator is available, validate each skill:
+
+```bash
+skills-ref validate .agents/skills/<skill-name>
+```
+
+Fix validation failures before considering the setup complete.
+
+### 18.16 Default decision rule
+
+When adding reusable agent guidance, decide where it belongs using this rule:
+
+```
+Does this instruction apply broadly to most repository work?
+    Yes -> repository instructions such as AGENTS.md
+
+Does it describe a reusable task or workflow that should activate only
+for relevant work?
+    Yes -> .agents/skills/<skill-name>/SKILL.md
+
+Is it detailed supporting knowledge needed only while executing a skill?
+    Yes -> .agents/skills/<skill-name>/references/
+
+Is it deterministic executable behavior?
+    Yes -> .agents/skills/<skill-name>/scripts/
+
+Is it a static template or resource used to produce output?
+    Yes -> .agents/skills/<skill-name>/assets/
+```
+
+Maintain `.agents/skills/` as the repository's single source of truth for portable agent skills.
+
+---
+
+## 19. Version History
 
 This guidelines document is maintained as the project evolves. Significant changes should be documented here.
 
 - **v1.0** (2026-09-06): Initial comprehensive guidelines based on existing codebase analysis
+- **v1.1** (2026-09-11): Added Section 18 — Repository Agent Skills Convention (`.agents/skills/`)
 
 ---
 
