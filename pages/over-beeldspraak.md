@@ -25,10 +25,10 @@ Fotoclub Beeldspraak komt op dinsdagavonden (data zie agenda) om 20.00 uur bijee
 
 ## Bestuur
 
-- **Hank Hallegraeff / Stephan Tamminga** - *voorzitters*
-- **Rinske Hokwerda** - *secretaris*
-- **Marco Harmsen** - *penningmeester*
-- **Liesbeth Timmermans** - *lid*
+- **Stephan Tamminga** - *voorzitter*
+- **Guido Kamp** - *secretaris*
+- **Gerrit Scheeres** - *penningmeester*
+- **Ineke Bloemendaal** - *algemeen lid*
 
 ## Privacy
 

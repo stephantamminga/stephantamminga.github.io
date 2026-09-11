@@ -106,8 +106,8 @@ Iedere maand kiezen de clubleden aan het eind van de bespreekavond een 'foto van
 </div>
 
 <div class="photo-highlight">
-  <img src="{{ '/assets/images/content/foto-van-de-maand/21.jpg' | relative_url }}" alt="© Stefan Tamminga - november 2023">
-  <div class="photo-caption">© Stefan Tamminga - november 2023</div>
+  <img src="{{ '/assets/images/content/foto-van-de-maand/21.jpg' | relative_url }}" alt="© Stephan Tamminga - november 2023">
+  <div class="photo-caption">© Stephan Tamminga - november 2023</div>
 </div>
 
 <div class="photo-highlight">
